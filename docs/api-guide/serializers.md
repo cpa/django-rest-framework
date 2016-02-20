@@ -73,7 +73,7 @@ Deserialization is similar. First we parse a stream into Python native datatypes
 
 ## Saving instances
 
-If we want to be able to return complete object instances based on the validated data we need to implement one or both of the `.create()` and `update()` methods. For example:
+If we want to be able to return complete object instances based on the validated data we need to implement one or both of the `.create()` and `.update()` methods. For example:
 
     class CommentSerializer(serializers.Serializer):
         email = serializers.EmailField()
